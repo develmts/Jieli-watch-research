@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');
+const {validateGuardedCapture}=require('../src/research/guarded-capture-policy');
+const {request,ack}=require('../src/watch/device-profile');
+const at='2026-01-01T00:00:00Z';
+const report={battery:[{percent:80,observedAt:at}],queries:[{trace:[{at,normalTx:request(25,0).toString('hex')}],frames:[]}]};
+assert.deepEqual(validateGuardedCapture(report),{requests:1,acks:0});
+for(const percent of [15,0,101,null]) assert.throws(()=>validateGuardedCapture({...report,battery:[{percent,observedAt:at}]}),/battery/);
+assert.throws(()=>validateGuardedCapture({...report,battery:[]}),/battery/);
+assert.throws(()=>validateGuardedCapture({...report,battery:[{percent:80,observedAt:'2025-12-31T00:00:00Z'}]}),/battery/);
+assert.throws(()=>validateGuardedCapture({...report,queries:[{trace:[{at,normalTx:request(19,2).toString('hex')}]}]}),/Non-allowlisted/);
+assert.throws(()=>validateGuardedCapture({...report,queries:[{trace:[{normalAckTx:ack(25,0).toString('hex')}],frames:[]}]}),/ACK/);
+console.log('PASS: synthetic battery gates, request allowlist and ACK correlation.');

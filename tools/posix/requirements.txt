@@ -1,0 +1,2 @@
+# Bleak (hbldh and contributors), MIT. See README.md and docs/SOURCES.md.
+bleak==3.0.2

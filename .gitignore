@@ -1,0 +1,12 @@
+node_modules/
+output/
+private/
+*.dll
+*.apk
+*.dex
+*.so
+*.log
+*.sqlite*
+*.pyc
+__pycache__/
+.venv/

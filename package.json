@@ -1,0 +1,15 @@
+{
+  "name": "hryfine-research",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "node tests/test-device-profile.js && node tests/test-device-info.js && node tests/test-research-queries.js && node tests/test-guarded-policy.js",
+    "check": "node tools/check-content.js"
+  },
+  "dependencies": {
+    "@alexaltea/capstone-js": "^5.0.9",
+    "adm-zip": "^0.6.1"
+  }
+}

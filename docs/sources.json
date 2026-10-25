@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "GADGETBRIDGE",
+      "title": "Gadgetbridge LaxasFit support",
+      "credit": "Freeyourgadget/Gadgetbridge contributors. Reviewed headers credit Arjan Schrijver, Damien Gaignon, Petr Vaněk, Daniel Dakhno, José Rebelo and the literal contributor name \"a b\".",
+      "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge",
+      "reviewedRevision": "306e1ef0f35999628f12327cf1fb7b7bf7c62c8a",
+      "role": "Compared normal-channel framing, capability interpretations, Q11 matching, hardware getter and initialization behavior.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Reviewed source headers: AGPL-3.0-or-later. Official archived README describes AGPLv3; per-file headers are the more precise record.",
+      "verificationStatus": "official-docs-confirmed; pinned-file-headers-verified-locally; Codeberg-refetch-unavailable",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md",
+        "docs/OPEN_SOURCE_REVIEW.md",
+        "docs/COMMANDS_AND_NEXT_STEPS.md",
+        "docs/NIGHT_RESEARCH.md",
+        "tools/posix/watch_ble.py",
+        "tools/posix/README.md"
+      ],
+      "verificationUrl": "https://github.com/Freeyourgadget/Gadgetbridge/blob/master/README.md",
+      "fileCredits": [
+        {
+          "file": "LaxasFitConstants.java",
+          "credit": "Copyright (C) 2021-2024 Petr Vaněk"
+        },
+        {
+          "file": "LaxasFitDeviceSupport.java",
+          "credit": "Copyright (C) 2021-2026 Arjan Schrijver, Damien Gaignon, Petr Vaněk"
+        },
+        {
+          "file": "LaxasFitCoordinator.java",
+          "credit": "Copyright (C) 2021-2024 a b, Damien Gaignon, Daniel Dakhno, José Rebelo, Petr Vaněk"
+        }
+      ]
+    },
+    {
+      "id": "LAXASFIT-HA",
+      "title": "LaxasFit BLE Home Assistant integration",
+      "credit": "Victor Billyph (victorbillyph) and contributors",
+      "url": "https://github.com/victorbillyph/chinese-smartwatch-homeassistant",
+      "reviewedRevision": null,
+      "role": "Compared UUID/framing and documented differences in ACK handling and capability parsing.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "MIT; LICENSE credits Copyright (c) 2026 Victor Billyph.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ],
+      "licenseUrl": "https://raw.githubusercontent.com/victorbillyph/chinese-smartwatch-homeassistant/main/LICENSE"
+    },
+    {
+      "id": "JIELIE",
+      "title": "JieLi STUFF",
+      "credit": "kagaimiq (Andrey Grigoryev) and contributors",
+      "url": "https://github.com/kagaimiq/jielie",
+      "reviewedRevision": "1657d25e6e51df6b2c18cd55cfc576c4a6370c63",
+      "role": "Chip, CPU, firmware-container and programming-interface reference; no chip identification inferred for this device.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md"
+      ]
+    },
+    {
+      "id": "JIELI-HEALTH",
+      "title": "Android-JL_Health",
+      "credit": "JieLi Technology / Jieli-Tech and contributors",
+      "url": "https://github.com/Jieli-Tech/Android-JL_Health/blob/main/README_en.md",
+      "reviewedRevision": null,
+      "role": "RCSP SDK comparison; not proof of local RCSP or firmware compatibility.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md"
+      ]
+    },
+    {
+      "id": "ZETIME",
+      "title": "Gadgetbridge ZeTime protocol and linked XDA discussion",
+      "credit": "Gadgetbridge ZeTime documentation contributors and the credited XDA thread participants",
+      "url": "https://gadgetbridge.org/internals/specifics/zetime-protocol/",
+      "reviewedRevision": null,
+      "role": "Compared 6F/8F framing and used documentation structure as a methodological reference.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "historical-primary-document-review; XDA-thread-unavailable-HTTP-403",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md"
+      ],
+      "additionalUrls": [
+        "https://gadgetbridge.org/gadgets/wearables/mykronoz/",
+        "https://xdaforums.com/t/testing-gadgetbridge-with-zetime-support.3813241/"
+      ]
+    },
+    {
+      "id": "OPENWATCH",
+      "title": "OpenWatchProject readme",
+      "credit": "OpenWatchProject/BLOCKS contributors",
+      "url": "https://github.com/OpenWatchProject/readme",
+      "reviewedRevision": "7ac721e94a38016c694e3a3dd8550ceaa9f770af",
+      "role": "Compared explicitly targeted MediaTek/AOSP devices and recovery assumptions.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md"
+      ]
+    },
+    {
+      "id": "OPEN-SMARTWATCH",
+      "title": "Open-Smartwatch OS",
+      "credit": "Open-Smartwatch contributors",
+      "url": "https://github.com/Open-Smartwatch/open-smartwatch-os",
+      "reviewedRevision": "cf10dd635b41b03c30aa21ddd2492ccc07142e63",
+      "role": "Compared ESP32 hardware targets and desktop-emulator scope.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "OS repository identifies GPL-3.0. Hardware/docs may have separate terms; not inferred here.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md"
+      ]
+    },
+    {
+      "id": "ASTEROIDOS",
+      "title": "AsteroidOS",
+      "credit": "AsteroidOS contributors",
+      "url": "https://asteroidos.org/",
+      "reviewedRevision": null,
+      "role": "Compared Linux stack and board-specific port model.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Component-specific; no blanket license asserted.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/PROJECT_REVIEW.md"
+      ]
+    },
+    {
+      "id": "C30",
+      "title": "C30-20-Pro-BLE-Reverse-Engineering",
+      "credit": "TruthGh0st and contributors",
+      "url": "https://github.com/TruthGh0st/C30-20-Pro-BLE-Reverse-Engineering",
+      "reviewedRevision": "c506e6c45867d860327ae0c504a8867ef167547b",
+      "role": "Compared author claims and independently analyzed an external btsnoop capture.",
+      "reuse": "Authored parser; historical third-party data input only. No README/PDF/DOCX/archive/capture redistributed.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/C30_README_REVIEW.md",
+        "src/research/analyze-c30-capture.js"
+      ]
+    },
+    {
+      "id": "BLUETRUM-TOOLS",
+      "title": "bluetrum-tools",
+      "credit": "kagaimiq and contributors",
+      "url": "https://github.com/kagaimiq/bluetrum-tools",
+      "reviewedRevision": null,
+      "role": "Architecture/hardware-family reference only; not used to identify or support this unit.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ]
+    },
+    {
+      "id": "ATCWATCH",
+      "title": "ATCwatch",
+      "credit": "atc1441 and contributors",
+      "url": "https://github.com/atc1441/ATCwatch",
+      "reviewedRevision": null,
+      "role": "Architecture/hardware-family reference only; not used to identify or support this unit.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ]
+    },
+    {
+      "id": "WASP-OS",
+      "title": "wasp-os",
+      "credit": "wasp-os contributors",
+      "url": "https://github.com/wasp-os/wasp-os",
+      "reviewedRevision": null,
+      "role": "Architecture/hardware-family reference only; not used to identify or support this unit.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ]
+    },
+    {
+      "id": "INFINITIME",
+      "title": "InfiniTime",
+      "credit": "InfiniTime contributors",
+      "url": "https://github.com/InfiniTimeOrg/InfiniTime",
+      "reviewedRevision": null,
+      "role": "Architecture/hardware-family reference only; not used to identify or support this unit.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ]
+    },
+    {
+      "id": "BLUETOOTH-SIG",
+      "title": "Bluetooth Assigned Numbers and L2CAP",
+      "credit": "Bluetooth SIG",
+      "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Assigned_Numbers/out/en/index-en.html",
+      "reviewedRevision": null,
+      "role": "Standard UUID terminology and CID distinction.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-reference-recorded-in-historical-review",
+      "usedBy": [
+        "docs/UUID_AND_PROTOCOL.md"
+      ],
+      "additionalUrls": [
+        "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-61/out/en/host/logical-link-control-and-adaptation-protocol-specification.html"
+      ]
+    },
+    {
+      "id": "NORDIC-NUS",
+      "title": "Nordic UART Service",
+      "credit": "Nordic Semiconductor",
+      "url": "https://nrfconnectdocs.nordicsemi.com/ncs/latest/nrf/libraries/bluetooth/services/nus.html",
+      "reviewedRevision": null,
+      "role": "Distinguishes official ...9E service from observed ...9F.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-reference-recorded-in-historical-review",
+      "usedBy": [
+        "docs/UUID_AND_PROTOCOL.md"
+      ]
+    },
+    {
+      "id": "PHYPLUS",
+      "title": "PHY6222 product information",
+      "credit": "Phyplus",
+      "url": "https://en.phyplusinc.com/product_detail/1.html",
+      "reviewedRevision": null,
+      "role": "Vendor attribution for PHY6222; not our hardware identification.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "primary-reference-recorded-in-historical-review",
+      "usedBy": [
+        "docs/C30_README_REVIEW.md"
+      ]
+    },
+    {
+      "id": "REFINE-LEAD",
+      "title": "ReFine author discussion",
+      "credit": "Author identity not verified; refer to the original post before attribution beyond this link.",
+      "url": "https://www.reddit.com/r/hardwarehacking/comments/1wsmxf9/i_reverseengineered_my_hryfine_smartwatchs_ble/",
+      "reviewedRevision": null,
+      "role": "Unverified lead only. Not a verified open-source implementation or source for local findings.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "unverified-historical-lead",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ]
+    },
+    {
+      "id": "BOOD-LEAD",
+      "title": "BOOD/Cus5610 author discussion",
+      "credit": "Author identity not verified; refer to the original post before attribution beyond this link.",
+      "url": "https://www.reddit.com/r/hardwarehacking/comments/1u6hhqs/initial_reverse_engineering_notes_on_a_generic/",
+      "reviewedRevision": null,
+      "role": "Unverified lead only. Not a verified open-source implementation or source for local findings.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "Not verified; no code or text redistributed.",
+      "verificationStatus": "unverified-historical-lead",
+      "usedBy": [
+        "docs/OPEN_SOURCE_REVIEW.md"
+      ]
+    },
+    {
+      "id": "CAPSTONE-JS",
+      "title": "@alexaltea/capstone-js",
+      "credit": "Alexandro Sanchez Bach and contributors",
+      "url": "https://github.com/AlexAltea/capstone.js",
+      "reviewedRevision": "5.0.9",
+      "role": "Installed analysis dependency.",
+      "reuse": "Dependency installed through npm; excluded node_modules is not vendored project source.",
+      "licenseStatus": "BSD-3-Clause; unmodified packaged notice retained.",
+      "verificationStatus": "installed-package-and-primary-repository-confirmed",
+      "usedBy": [
+        "src/research/analyze-native.js"
+      ]
+    },
+    {
+      "id": "ADM-ZIP",
+      "title": "adm-zip",
+      "credit": "Another-D-Mention Software and other contributors",
+      "url": "https://github.com/cthackers/adm-zip",
+      "reviewedRevision": "0.6.1",
+      "role": "Installed analysis dependency.",
+      "reuse": "Dependency installed through npm; excluded node_modules is not vendored project source.",
+      "licenseStatus": "MIT; unmodified packaged notice retained.",
+      "verificationStatus": "installed-package-and-primary-repository-confirmed",
+      "usedBy": [
+        "src/research/analyze-native.js"
+      ]
+    },
+    {
+      "id": "CAPSTONE-ENGINE",
+      "title": "Capstone disassembly framework",
+      "credit": "Capstone engine and LLVM contributors",
+      "url": "https://github.com/capstone-engine/capstone",
+      "reviewedRevision": null,
+      "role": "Underlying engine provenance for the JavaScript/WASM dependency.",
+      "reuse": "Reference/comparison only; no upstream implementation source vendored.",
+      "licenseStatus": "See upstream LICENSE.TXT and component notices; wrapper license alone is not a substitute.",
+      "verificationStatus": "primary-page-confirmed",
+      "usedBy": [
+        "src/research/analyze-native.js"
+      ],
+      "licenseUrl": "https://github.com/capstone-engine/capstone/blob/5.0.9/LICENSE.TXT"
+    },
+    {
+      "id": "BLEAK",
+      "title": "Bleak Bluetooth client",
+      "credit": "Henrik Blidh and contributors",
+      "url": "https://github.com/hbldh/bleak",
+      "reviewedRevision": "v3.0.2",
+      "role": "Optional Linux BlueZ and macOS CoreBluetooth transport dependency; API and backend documentation used for the authored POSIX adapter.",
+      "reuse": "Dependency and API documentation reference; no upstream implementation vendored.",
+      "licenseStatus": "MIT; upstream LICENSE credits Copyright (c) 2020, Henrik Blidh.",
+      "verificationStatus": "Pinned upstream package metadata and license plus official API/backend documentation reviewed; physical POSIX operation not verified.",
+      "usedBy": [
+        "tools/posix/watch_ble.py",
+        "tools/posix/requirements.txt",
+        "tools/posix/README.md",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "additionalUrls": [
+        "https://bleak.readthedocs.io/en/latest/api/client.html",
+        "https://bleak.readthedocs.io/en/latest/backends/linux.html",
+        "https://bleak.readthedocs.io/en/latest/backends/macos.html"
+      ],
+      "licenseUrl": "https://github.com/hbldh/bleak/blob/v3.0.2/LICENSE"
+    }
+  ],
+  "historicalExternalArtifactRecords": [
+    {
+      "file": "LaxasFitConstants.java",
+      "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/raw/commit/306e1ef0f35999628f12327cf1fb7b7bf7c62c8a/app/src/main/java/nodomain/freeyourgadget/gadgetbridge/devices/laxasfit/LaxasFitConstants.java",
+      "sha256": "c8c8c5d1802503eb4d7ac8d4edfa4a65ce671939b74b5374e46901277a41efcc",
+      "redistributed": false
+    },
+    {
+      "file": "LaxasFitDeviceCoordinator.java",
+      "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/raw/commit/306e1ef0f35999628f12327cf1fb7b7bf7c62c8a/app/src/main/java/nodomain/freeyourgadget/gadgetbridge/devices/laxasfit/LaxasFitDeviceCoordinator.java",
+      "error": "Response status code does not indicate success: 404 (Not Found).",
+      "redistributed": false
+    },
+    {
+      "file": "jielie-newfw.md",
+      "url": "https://raw.githubusercontent.com/kagaimiq/jielie/main/datafmt/newfw.md",
+      "sha256": "f7bed1d0eba5740d64f0f6579bdc435c17c1a1eb15a801c8fdb1ddc9b5bc16e0",
+      "redistributed": false
+    },
+    {
+      "file": "jielie-protos.md",
+      "url": "https://raw.githubusercontent.com/kagaimiq/jielie/main/protos/index.md",
+      "sha256": "c13eb83a3f58df0142f75851fd520744a02d8f350b9d347a25fe9e3ba9f77ba5",
+      "redistributed": false
+    },
+    {
+      "file": "jielie-cpu.md",
+      "url": "https://raw.githubusercontent.com/kagaimiq/jielie/main/cpu/index.md",
+      "sha256": "43aeae7944b23cde0e6f37e7c55c20c20f7373ffd51955a65c021302d88f3645",
+      "redistributed": false
+    },
+    {
+      "file": "jielie-devices.md",
+      "url": "https://raw.githubusercontent.com/kagaimiq/jielie/main/devices/index.md",
+      "sha256": "ba651a949195f14cb785c5f0e9e5dbdb4ff951d7951f4c5ccac3676b42218977",
+      "redistributed": false
+    },
+    {
+      "file": "jielie-tree-meta.json",
+      "url": "https://api.github.com/repos/kagaimiq/jielie/commits/main",
+      "sha256": "75dc6c510f58c9a8731bc4791448487c8e068c52dc257e044eac915c5c107a55",
+      "redistributed": false
+    },
+    {
+      "file": "openwatch-meta.json",
+      "url": "https://api.github.com/repos/OpenWatchProject/readme/commits/master",
+      "sha256": "5395a68a704c0544ca591b65efead1d82b77641cf0516f18995c462107f21247",
+      "redistributed": false
+    },
+    {
+      "file": "open-smartwatch-meta.json",
+      "url": "https://api.github.com/repos/Open-Smartwatch/open-smartwatch-os/commits/master",
+      "sha256": "b0dfb1d61ae9db55b5e19ffdb7e863b7b69b7191759a1bb332af92b475e155de",
+      "redistributed": false
+    },
+    {
+      "file": "open-smartwatch-support.md",
+      "url": "https://raw.githubusercontent.com/Open-Smartwatch/open-smartwatch-os/master/docs/support.md",
+      "error": "Response status code does not indicate success: 404 (Not Found).",
+      "redistributed": false
+    },
+    {
+      "file": "LaxasFitDeviceSupport.java",
+      "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/raw/commit/306e1ef0f35999628f12327cf1fb7b7bf7c62c8a/app/src/main/java/nodomain/freeyourgadget/gadgetbridge/service/devices/laxasfit/LaxasFitDeviceSupport.java",
+      "sha256": "cc17b0ca0865f51e406bb9adbf1cfa1098df009764753658480e4ff1b517d7c9",
+      "redistributed": false
+    },
+    {
+      "file": "openwatch-readme.md",
+      "url": "https://raw.githubusercontent.com/OpenWatchProject/readme/master/README.md",
+      "sha256": "c3bd506c24c81f8e3e24697d3093d17a7f31bf3a55fa5127b956a89eec904036",
+      "redistributed": false
+    },
+    {
+      "file": "open-smartwatch-platformio.ini",
+      "url": "https://raw.githubusercontent.com/Open-Smartwatch/open-smartwatch-os/master/platformio.ini",
+      "sha256": "f8ab0d210016790ce8518233524d2971deae3992cda62ca6f6eb909b078efbac",
+      "redistributed": false
+    },
+    {
+      "file": "open-smartwatch-readme.md",
+      "url": "https://raw.githubusercontent.com/Open-Smartwatch/open-smartwatch-os/master/README.md",
+      "sha256": "9cbab555c6e3d497541c859f51562ff8bd716337ef9e9372cb96dc93445affdc",
+      "redistributed": false
+    },
+    {
+      "file": "jielie-tree.json",
+      "url": "https://api.github.com/repos/kagaimiq/jielie/git/trees/main?recursive=1",
+      "sha256": "09825633fb194c97140d7ab88b2b468c75644c8906173029e95c8e1a5b92979f",
+      "redistributed": false
+    },
+    {
+      "file": "asteroid-faq.html",
+      "url": "https://asteroidos.org/faq/",
+      "sha256": "4aef2b51e6fdabcda059730dd0fd7f5ea397e13b5330be416914312ba2b056b3",
+      "redistributed": false
+    },
+    {
+      "file": "asteroid-watches.html",
+      "url": "https://asteroidos.org/watches/",
+      "sha256": "7678aedcbd18dfbd2a0e48d359045287656dcc4bda150898f1d90ca099d52e9f",
+      "redistributed": false
+    },
+    {
+      "file": "xda-zetime.html",
+      "url": "https://xdaforums.com/t/testing-gadgetbridge-with-zetime-support.3813241/",
+      "error": "Response status code does not indicate success: 403 (Forbidden).",
+      "redistributed": false
+    },
+    {
+      "file": "zetime-protocol.html",
+      "url": "https://gadgetbridge.org/internals/specifics/zetime-protocol/",
+      "sha256": "4ae8991443b9cf416d5a1eefa8518c5053017155cfdebc946e55f5143cf9171d",
+      "redistributed": false
+    },
+    {
+      "file": "LaxasFitCoordinator.java",
+      "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge/raw/commit/306e1ef0f35999628f12327cf1fb7b7bf7c62c8a/app/src/main/java/nodomain/freeyourgadget/gadgetbridge/devices/laxasfit/LaxasFitCoordinator.java",
+      "sha256": "09a89837b445f6aa3dcb2615cb9a4c88ca93dfc4b07b958deaf6a511fb455af4",
+      "redistributed": false
+    }
+  ]
+}
